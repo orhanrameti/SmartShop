@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="app-container">
+        <div id="main-content">
+            <header>
+                <h1>Smart Shop</h1>
+                <p>Produkte </p>
+            </header>
+
+            <div id="filters">
+                <button class="filter-btn active" data-filter="all">T gjitha</button>
+                <button class="filter-btn" data-filter="Elektronikë">Elektronik</button>
+                <button class="filter-btn" data-filter="Veshje">Veshje</button>
+                <button class="filter-btn" data-filter="Shtëpi">Shtepi</button>
+            </div>
+
+            <div id="product-grid">
+            </div>
+        </div>
+
+        <aside id="cart-section">
+            <h2>cart</h2>
+            <div id="cart-content">
+                <ul id="cart-items">
+                    <li class="cart-empty-msg">cart is empty.</li>
+                </ul>
+                <div id="cart-summary">
+                    <div class="summary-row">
+                        <span>Cmimi pa tvsh:</span>
+                        <span id="subtotal">0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>TVSH (18%):</span>
+                        <span id="tax">0.00 </span>
+                    </div>
+                    <hr>
+                    <div class="summary-row total-row">
+                        <span>Totali:</span>
+                        <span id="total">0.00 </span>
+                    </div>
+                    <button id="checkout-btn">Paguaj</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+    <footer style="background:#222; color:#fff; text-align:center; padding:18px 8px; font-size:15px; margin-top:40px; position:relative;">
+        Ky projekt eshte realizuar per lenden "Programim ne gjuhe skriptuese" ne Fakultetin "Nene Tereza" ne Shkup.<br>
+        &copy; 2025 Te gjitha te drejtat e rezervuara.
+        <span style="position:absolute; right:18px; bottom:18px; font-size:14px; color:#bbb; text-align:right;">
+            Orhan Rameti<br>
+            Drejtimi: Programim i Aplikuar
+        </span>
+    </footer>
+</body> 
+</html>
